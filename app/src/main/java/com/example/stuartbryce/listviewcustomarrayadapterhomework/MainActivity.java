@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Transfer currentTransfer = null;
 
         TopTransfers2017 topTransfers = new TopTransfers2017();
         ArrayList<Transfer> transfers = topTransfers.getTransfers();
