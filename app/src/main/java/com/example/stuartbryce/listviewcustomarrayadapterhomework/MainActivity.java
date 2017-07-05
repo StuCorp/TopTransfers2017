@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         snackbar.show();
         snackbar.setAction("Find out more", this);
 
+        SavedPlayerPreferences.setStoredText(this, 1, transfer.getRank());
 
          }
 
