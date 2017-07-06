@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">"ListView Custom ArrayAdapter Homework  "</string>
+    <string name="say_hello">\'allo guvnor</string>
+    <string name="i_made">i\'m stuart. i made this. i made everything.</string>
+    <string name="tell_me_more">tell me more</string>
+    <string name="made_by_stuart">Made by Stuart. A fashion blogger. A podcaster. A sometimes mummy.</string>
 </resources>
