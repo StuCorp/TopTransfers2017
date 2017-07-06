@@ -11,11 +11,22 @@ public class Transfer {
     public int rank;
     public int price;
 
-    public Transfer(int rank, String playerName, String club, int price){
+    public int getImageId() {
+        return imageId;
+    }
+
+    public void setImageId(int imageId) {
+        this.imageId = imageId;
+    }
+
+    private int imageId;
+
+    public Transfer(int rank, String playerName, String club, int price, int imageId){
         this.playerName = playerName;
         this.rank = rank;
         this.price = price;
         this.buyingClub = club;
+        this.imageId = imageId;
     }
 
     public String getPlayerName() {
@@ -32,5 +43,13 @@ public class Transfer {
 
     public Integer getPrice() {
         return price;
+    }
+
+    public String getPrettyPrice(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("£");
+        sb.append(getPrice());
+        sb.append("m");
+        return sb.toString();
     }
 }

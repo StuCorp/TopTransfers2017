@@ -72,10 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Snackbar snackbar = Snackbar.make(listItem, sb.toString(), Snackbar.LENGTH_LONG);
         snackbar.show();
         snackbar.setAction("Find out more", this);
-
-        SavedPlayerPreferences.setStoredText(this, 1, transfer.getRank());
-
-         }
+    }
 
     @Override
     public void onClick(View v) {

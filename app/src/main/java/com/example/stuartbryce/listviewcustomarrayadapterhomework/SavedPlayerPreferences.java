@@ -15,17 +15,8 @@ import static com.example.stuartbryce.listviewcustomarrayadapterhomework.R.id.ra
 public class SavedPlayerPreferences {
 
 //    private static final ArrayList<Integer> PREF_INTARRAY = new ArrayList<>();
-    private static final String rank1 = null;
-    private static final String rank2 = null;
-    private static final String rank3 = null;
-    private static final String rank4 = null;
-    private static final String rank5 = null;
-    private static final String rank6 = null;
-    private static final String rank7 = null;
-    private static final String rank8 = null;
-    private static final String rank9 = null;
-    private static final String rank10 = null;
-    private static final String rank11 = null;
+//    private static final String rank1 = "rank1";
+
 
 
     public static void setStoredText(Context context, int upTick, int playerRank){
@@ -35,6 +26,10 @@ public class SavedPlayerPreferences {
 
         String player = String.format("rank%d", playerRank);
         editor.putInt(player, upTick);
+
+        String my_key = "key";
+        editor.putString(my_key, "value");
+
         editor.apply();
 
 //        or one line:
